@@ -43,6 +43,7 @@ body {
 
 .main {
     display: grid;
+    grid-template-rows: 150px;
 }
 
 .header {
@@ -64,13 +65,13 @@ body {
 }
 
 .header-top input {
-    height: 24px;
+    height: 30px;
     width:90%;
     align-self: center;
     border-radius: 15px;
     border: none;
     background-color: rgb(217, 229, 233);
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .header-top .search {
@@ -163,7 +164,7 @@ body {
     gap: 10px;
 }
 
-.project .title {
+.project .title, .announcement .title, .trending .title {
     text-align: start;
     font-weight: bolder;
     font-size: larger;
@@ -208,24 +209,84 @@ body {
 .info {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 30px;
 }
 
 .announcement {
     display: grid;
     grid-template-rows: 20px;
+    gap: 10px;
 }
 
 .announcement .content {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0px grey;
+    padding: 20px;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#e8e8e8;
+    height: 2px;
+  }
+
+.announcement h1, .announcement p {
+    margin: 0;
+}
+
+.announcement h1 {
+    font-size: medium;
 }
 
 .trending {
     display: grid;
     grid-template-rows: 20px;
+    gap: 10px;
 }
 
 .trending .content {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0px grey;
+    padding: 20px;
+}
+
+.trending .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.trending .content .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.trending .content .tag {
+    font-size: large;
+}
+
+.trending .content .name {
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
 }
