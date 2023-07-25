@@ -8,16 +8,18 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sidebar {
     display: grid;
     grid-template-rows: 80px repeat(10, 30px);
     gap: 10px;
-    background-color: lightblue;
-    padding: 15px;
+    background-color: rgb(86, 213, 255);
+    padding: 20px;
     padding-top: 0;
     margin: 0;
+    color: white;
 }
 
 .sidebar .title {
@@ -36,7 +38,7 @@ body {
 
 .sidebar .menus {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -102,15 +104,16 @@ body {
 
 .header-bottom .profile {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 60px 1fr;
     justify-content: start;
     align-items: center;
     gap: 10px;
 }
 
 .header-bottom .profile img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .header-bottom .profile div {
@@ -147,7 +150,9 @@ body {
     height: 36px;
     border-radius: 50px;
     border: none;
-    background-color: lightblue;
+    background-color: rgb(122, 222, 255);
+    color: white;
+    font-size: 16px;
 }
 
 .main-content {
@@ -173,7 +178,7 @@ body {
 .card-container {
     display: grid;
     grid-template-rows: repeat(auto-fit, 180px);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -196,6 +201,7 @@ body {
 
 .card p {
     margin: 0;
+    color: rgb(85, 85, 85);
 }
 
 .card-container .icons {
@@ -240,6 +246,11 @@ hr {
 
 .announcement h1, .announcement p {
     margin: 0;
+}
+
+.announcement p {
+    color: rgb(103, 103, 103);
+    font-size: 15px;
 }
 
 .announcement h1 {
